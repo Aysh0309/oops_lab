@@ -65,14 +65,11 @@ int main() {
         employees[i].calculateGrossSalary();
     }
 
-    // Display all employees
-    cout << "\n========== EMPLOYEE DETAILS ==========" << endl;
+    cout << "\nEMPLOYEE DETAILS\n" << endl;
 
     for (int i = 0; i < n; i++) {
         employees[i].displayDetails();
     }
-
-    // Find employee with highest gross salary
     int highestIndex = 0;
 
     for (int i = 1; i < n; i++) {
@@ -83,7 +80,7 @@ int main() {
         }
     }
 
-    cout << "\n===== HIGHEST GROSS SALARY =====" << endl;
+    cout << "\nHIGHEST GROSS SALARY" << endl;
 
     employees[highestIndex].displayDetails();
 
